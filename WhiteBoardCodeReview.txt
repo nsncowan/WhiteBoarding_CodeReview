@@ -1,0 +1,22 @@
+Prompt 2
+remove duplicates from array
+input = [7, 9, 9, 12, 7, 7, 53]
+output = [7, 9, 12, 53]
+
+no filter(); 
+
+function removeDuplicates(inputArr) {
+  const outputArr = [];
+  inputArr.forEach(element => {
+    if (outputArr.includes(element)) {
+     return;
+    }
+    else outputArr.push(element);
+  });
+  return outputArr;
+}
+
+  // init empty arr
+  // loop inputArr
+  // push input element to ouputArr
+  // check if input index match any element in output, if true, skip
